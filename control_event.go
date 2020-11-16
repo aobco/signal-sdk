@@ -16,6 +16,7 @@ const (
   COMMAND_UPDATE_DEVICE       uint8 = 0
   COMMAND_SCREENSHOT          uint8 = 1
   COMMAND_REFERESH_SCREENSHOT uint8 = 2
+  COMMAND_CLIBOARD uint8 = 3
 
   APK_EVENT_OPT_INSTALL   uint8 = 0
   APK_EVENT_OPT_UNINSTALL uint8 = 1
@@ -94,4 +95,5 @@ type FileEvent struct {
 
 type CommandEvent struct {
   Signal uint8 `json:"signal"`
+  Shell  string `json:"shell"`
 }

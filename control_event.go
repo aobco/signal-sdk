@@ -36,6 +36,7 @@ type WsClientMsg struct {
   ClientID  string   `json:"clientid"`
   Target    []string `json:"target"`
   Msg       string   `json:"msg"`
+  RawData   []byte    `json:"raw_data"`
 }
 
 type WsServerMsg struct {

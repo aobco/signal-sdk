@@ -1,3 +1,3 @@
-module github.com/aobco/signal-sdk
+module github.com/universe000/signal-sdk
 
 go 1.14
